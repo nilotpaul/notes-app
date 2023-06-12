@@ -6,16 +6,7 @@ import { TiTick } from "react-icons/ti"
 import './App.css'
 
 function App() {
-
-  // useEffect(() => {
-  //   if(Object.keys(notes).length === 0){
-  //     console.log("empty")
-  //   }
-  //   if(Object.keys(notes).length > 0){
-  //     console.log("not empty")
-  //   }
-  // })
-
+  
   useEffect(() => {
     const local = localStorage.getItem("local-notes")
     const lnotes = JSON.parse(local)
