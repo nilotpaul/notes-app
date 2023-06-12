@@ -7,15 +7,6 @@ import './App.css'
 
 function App() {
 
-  // useEffect(() => {
-  //   if(Object.keys(notes).length === 0){
-  //     console.log("empty")
-  //   }
-  //   if(Object.keys(notes).length > 0){
-  //     console.log("not empty")
-  //   }
-  // })
-
   useEffect(() => {
     const local = localStorage.getItem("local-notes")
     const lnotes = JSON.parse(local)
@@ -94,7 +85,7 @@ function App() {
             </div>
           </form>
         </div>
-        { notes.length === 0 ? (<h3>No records are available</h3>) :
+        { notes.length === 0 ? (<h3 className='no-val'>No records are available</h3>) :
         <div className="list">
           {notes.map((items) => {
             return (
