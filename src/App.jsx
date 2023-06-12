@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  useEffect(() => {
+    useEffect(() => {
     const local = localStorage.getItem("local-notes")
     const lnotes = JSON.parse(local)
 
